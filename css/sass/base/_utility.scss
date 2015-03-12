@@ -1,15 +1,3 @@
-.clearfix:after {
-  display: table;
-  clear: both;
-  content: ' ';
-}
-
-.screenreaderonly,
-.visually-hidden,
-.visuallyhidden {
-  @include visually-hidden;
-}
-
 @media (max-width: 767px) {
   .desktop {
     display: none !important;
@@ -40,10 +28,4 @@
 
 .hide {
   display: none;
-}
-
-.ir {
-  display: block;
-  overflow: hidden;
-  text-indent: -999px;
 }

@@ -1,46 +1,17 @@
 fieldset {
-  margin: 0 0 20px;
+  margin: 0 0 1.5em;
   border: 0;
   padding: 0;
 }
 
 legend {
-  @extend .heading5;
-}
-
-button,
-input,
-select,
-textarea {
-  margin: 0;
-  font-family: inherit;
-  font-size: 100%;
-}
-
-button,
-input {
-  line-height: normal;
-}
-
-button,
-select {
-  text-transform: none;
-}
-
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-  border: 0;
-  padding: 0;
+  @extend .heading4;
 }
 
 label {
-  @extend .ss-heading5;
+  @extend .heading5;
   display: block;
   cursor: pointer;
-
-  .required-true {
-    color: $error-color;
-  }
 }
 
 [type=text],
@@ -87,9 +58,6 @@ textarea {
 [type=submit],
 [type=button] {
   @extend [class*="ss-button"];
-  border: 0;
-  cursor: pointer;
-  -webkit-appearance: none;
 }
 
 [type=submit]:hover,
@@ -108,7 +76,5 @@ textarea {
 
 textarea {
   height: 8em;
-  overflow: auto;
-  vertical-align: top;
   resize: vertical;
 }

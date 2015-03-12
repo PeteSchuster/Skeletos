@@ -6,18 +6,9 @@ a {
     outline: thin dotted;
   }
 
-  &:active,
-  &:hover {
-    outline: 0;
-  }
-
   &:hover,
   &:focus {
     text-decoration: underline;
     color: $link-hover-color;
   }
-}
-
-button {
-  cursor: pointer;
 }

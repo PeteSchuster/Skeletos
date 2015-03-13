@@ -1,4 +1,4 @@
-.ss-grid {
+[class*="ss-grid"] {
   clear: both;
 
   > .ss-grid__col {
@@ -7,7 +7,7 @@
 }
 
 @include respond-to(768) {
-  .ss-grid {
+  [class*="ss-grid"] {
     font-size: 0;
 
     > .ss-grid__col {

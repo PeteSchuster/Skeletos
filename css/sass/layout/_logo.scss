@@ -1,4 +1,4 @@
-.logo {
+.ss-logo {
   width: $logo-width;
   height: $logo-height;
 
@@ -8,7 +8,7 @@
   }
 }
 
-h1.logo {
+h1.ss-logo {
   margin: 0 auto 10px;
 
   @include respond-to(768) {
@@ -16,7 +16,7 @@ h1.logo {
   }
 }
 
-a.logo {
+a.ss-logo {
   display: block;
   background: url('../images/logo-desktop.png?v1.0') no-repeat;
   background-size: #{$logo-width} #{$logo-height};

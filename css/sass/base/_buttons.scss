@@ -29,12 +29,12 @@
   }
 }
 
-.ss-button-primary {
+.ss-button--primary {
   background: $button-primary-background-color;
   color: $button-primary-text-color;
 }
 
-.ss-button-secondary {
+.ss-button--secondary {
   background: $button-secondary-background-color;
   color: $button-secondary-text-color;
 
@@ -48,15 +48,15 @@
   }
 }
 
-.ss-button-alt {
+.ss-button--alt {
   background: $button-alt-background-color;
   color: $button-alt-text-color;
 }
 
-.ss-button-small {
+.ss-button--small {
   @include font-size(11);
 }
 
-.ss-button-large {
+.ss-button--large {
   @include font-size(18);
 }

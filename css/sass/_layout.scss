@@ -1,14 +1,14 @@
-//Base
+//Wrapper
 //this file contains the styles
-//for all the top level containers
-//and strucutre for the application
-@import 'layout/base';
+//layout wrapper that gives the
+//layout a max width
+@import 'layout/wrapper';
 
 
 //Header
 //this file contains the styles
 //for the header
-@import 'layout/header';
+@import 'layout/page-header';
 
 
 //Logo
@@ -20,25 +20,37 @@
 //Navigation
 //this file contains the styles
 //for the main header nav
-@import 'layout/navigation';
+@import 'layout/primary-nav';
 
 
 //Content
 //this file contains the styles
 //for the main content area
-@import 'layout/content';
+@import 'layout/page-content';
 
 
 //Aside
 //this file contains the styles
 //for the main sidebar
-@import 'layout/aside';
+@import 'layout/page-sidebar';
 
 
 //Footer
 //this file contains the styles
 //for the main footer
-@import 'layout/footer';
+@import 'layout/page-footer';
+
+
+//Footer Nav
+//this file contains the styles
+//for the main footer
+@import 'layout/footer-nav';
+
+
+//Copyright
+//this file contains the styles
+//for the copyright text and links
+@import 'layout/copyright';
 
 
 //Grid

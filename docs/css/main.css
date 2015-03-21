@@ -570,6 +570,20 @@ textarea {
   h2,
   h3 {
     page-break-after: avoid; } }
+/*doc
+---
+title: Defaults
+name: defaults
+category: Base
+---
+
+Defaults
+
+```html_example
+<div></div>
+```
+
+*/
 html {
   font-size: 100%;
   overflow-y: scroll; }
@@ -794,6 +808,20 @@ td {
 tr:nth-child(even) td {
   background: #fafafa; }
 
+/*doc
+---
+title: Alignment
+name: alignment
+category: Base
+---
+
+Alignment
+
+```html_example
+<div></div>
+```
+
+*/
 .alignright,
 .alignleft,
 .aligncenter {
@@ -1002,15 +1030,36 @@ a.ss-logo {
   text-decoration: none;
   color: #436ce0; }
 
+/*doc
+---
+title: Grid
+name: grid
+category: Components CSS
+---
+
+Grid
+
+```html_example
+<div class="ss-grid">
+  <div class="ss-grid__col--1of2">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque accumsan pretium tortor eu laoreet. Phasellus nec rhoncus felis. Proin porttitor velit at mauris auctor, et egestas nibh sagittis. Aenean suscipit volutpat felis, sit amet congue urna. Cras ultrices dictum sapien in eleifend. Suspendisse consectetur suscipit suscipit. Integer euismod magna pulvinar turpis sollicitudin, et elementum ligula tincidunt.</p>
+  </div>
+  <div class="ss-grid__col--1of2">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque accumsan pretium tortor eu laoreet. Phasellus nec rhoncus felis. Proin porttitor velit at mauris auctor, et egestas nibh sagittis. Aenean suscipit volutpat felis, sit amet congue urna. Cras ultrices dictum sapien in eleifend. Suspendisse consectetur suscipit suscipit. Integer euismod magna pulvinar turpis sollicitudin, et elementum ligula tincidunt.</p>
+  </div>
+</div>
+```
+
+*/
 [class*="ss-grid"] {
   clear: both; }
-  [class*="ss-grid"] > .ss-grid__col {
+  [class*="ss-grid"] > [class*="ss-grid__col"] {
     margin-bottom: 20px; }
 
 @media (min-width: 48em) {
   [class*="ss-grid"] {
     font-size: 0; }
-    [class*="ss-grid"] > .ss-grid__col {
+    [class*="ss-grid"] > [class*="ss-grid__col"] {
       display: inline-block;
       padding: 0 10px;
       vertical-align: top;
@@ -1024,35 +1073,35 @@ a.ss-logo {
 
   .ss-grid--alt {
     overflow: hidden; }
-    .ss-grid--alt > .ss-grid__col-1of2:nth-child(odd) {
+    .ss-grid--alt > .ss-grid__col--1of2:nth-child(odd) {
       float: right;
       padding-right: 0;
       padding-left: 10px; }
-    .ss-grid--alt > .ss-grid__col-1of2:nth-child(even) {
+    .ss-grid--alt > .ss-grid__col--1of2:nth-child(even) {
       float: left;
       padding-right: 10px;
       padding-left: 0; }
 
-  .ss-grid__col-1of3 {
+  .ss-grid__col--1of3 {
     width: 33.3%; }
 
-  .ss-grid__col-1of4,
-  .ss-grid__col-1of2 {
+  .ss-grid__col--1of4,
+  .ss-grid__col--1of2 {
     width: 50%; }
 
-  .ss-grid__col-2of3 {
+  .ss-grid__col--2of3 {
     width: 66.6%; }
 
-  .ss-grid__col-3of4 {
+  .ss-grid__col--3of4 {
     width: 75%; }
 
-  .ss-grid__col-2of4 {
+  .ss-grid__col--2of4 {
     width: 100%; } }
 @media (min-width: 64em) {
-  .ss-grid__col-1of4 {
+  .ss-grid__col--1of4 {
     width: 25%; }
 
-  .ss-grid__col-2of4 {
+  .ss-grid__col--2of4 {
     width: 50%; } }
 /*doc
 ---
@@ -1078,11 +1127,12 @@ use either a `<button>` or an `<a>` element:
   display: inline-block;
   position: relative;
   margin-bottom: 1.5em;
+  border: 1px solid transparent;
   background: #666;
   cursor: pointer;
   padding: 0.5em 1.375em;
   text-align: center;
-  text-transform: uppercase;
+  text-transform: none;
   text-decoration: none;
   line-height: 1;
   color: #fff;
@@ -1097,7 +1147,8 @@ use either a `<button>` or an `<a>` element:
     color: #fff; }
   [class*="ss-button"]:active, [type=submit]:active,
   [type=button]:active {
-    background: #436ce0; }
+    background: #436ce0;
+    border-color: #4b78fa; }
   [class*="ss-button"] + [class*="ss-button"], [type=submit] + [class*="ss-button"],
   [type=button] + [class*="ss-button"], [class*="ss-button"] + [type=submit], [type=submit] + [type=submit],
   [type=button] + [type=submit],
@@ -1131,6 +1182,23 @@ use either a `<button>` or an `<a>` element:
 .ss-button--large {
   font-size: 1.125em; }
 
+/*doc
+---
+title: Text Buttons
+name: text-button
+category: Components CSS
+---
+
+Text Button styles can be applied to any element. Typically you'll want to
+use either a `<button>` or an `<a>` element:
+
+```html_example
+<button class="ss-text-button"><span>Click</span></button>
+<button class="ss-text-button--large"><span>Click</span></button>
+<button class="ss-text-button--small"><span>Click</span></button>
+```
+
+*/
 [class*="ss-text-button"] {
   display: inline-block;
   position: relative;
@@ -1146,6 +1214,7 @@ use either a `<button>` or an `<a>` element:
   color: #4b78fa;
   font-size: 1em; }
   [class*="ss-text-button"]:hover, [class*="ss-text-button"]:focus, [class*="ss-text-button"]:active {
+    background: none;
     text-decoration: none; }
   [class*="ss-text-button"] + [class*="ss-button"], [class*="ss-text-button"] + [type=submit],
   [class*="ss-text-button"] + [type=button],

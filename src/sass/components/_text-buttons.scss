@@ -1,3 +1,21 @@
+/*doc
+---
+title: Text Buttons
+name: text-button
+category: Components CSS
+---
+
+Text Button styles can be applied to any element. Typically you'll want to
+use either a `<button>` or an `<a>` element:
+
+```html_example
+<button class="ss-text-button"><span>Click</span></button>
+<button class="ss-text-button--large"><span>Click</span></button>
+<button class="ss-text-button--small"><span>Click</span></button>
+```
+
+*/
+
 [class*="ss-text-button"] {
   display: inline-block;
   position: relative;
@@ -16,6 +34,7 @@
   &:hover,
   &:focus,
   &:active {
+    background: none;
     text-decoration: none;
   }
 

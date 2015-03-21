@@ -22,11 +22,12 @@ use either a `<button>` or an `<a>` element:
   display: inline-block;
   position: relative;
   margin-bottom: 1.5em;
+  border: 1px solid transparent;
   background: $button-background-color;
   cursor: pointer;
   padding: calc-target(8) calc-target(22);
   text-align: center;
-  text-transform: uppercase;
+  text-transform: none;
   text-decoration: none;
   line-height: 1;
   color: $button-text-color;
@@ -41,6 +42,7 @@ use either a `<button>` or an `<a>` element:
 
   &:active {
     background: $button-alt-background-color;
+    border-color: $button-primary-background-color;
   }
 
   + [class*="ss-button"],

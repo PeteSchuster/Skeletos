@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title><%= title %> | Skeletos Styleguide</title>
+        <title> | Skeletos Styleguide</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -18,9 +18,9 @@
             <div class="wrapper">
                 <nav>
                     <ul>
-                      <% @categories.each do |category, file_name| %>
-                          <li><a href="<%= file_name %>"><%= category %></a></li>
-                      <% end %>
+                      
+                          <li><a href="components_css.html">Components CSS</a></li>
+                      
                     </ul>
                 </nav>
             </div>
@@ -29,7 +29,15 @@
         <main class="content">
             <div class="wrapper">
                 <ul>
-                    <% @blocks.each do |b| %>
-                        <li><a href="#<%= b[:name] %>"><%= b[:title] %></a></li>
-                    <% end %>
+                    
                 </ul>
+<h1>Welcome!</h1>
+            </div>
+        </main>
+        <footer class="ss-page-footer">
+            <div class="wrapper">
+                <p>This documentation generated using <a href="http://github.com/trulia/hologram">Hologram</a>
+            </div>
+        </footer>
+      </body>
+</html>

@@ -1,5 +1,13 @@
+                </main>
+                <aside class="ss-page-aside">
+                    <ul>
+                        <% @blocks.each do |b| %>
+                            <li><a href="#<%= b[:name] %>"><%= b[:title] %></a></li>
+                        <% end %>
+                    </ul>
+                </aside>
             </div>
-        </main>
+        </div>
         <footer class="ss-page-footer">
             <div class="wrapper">
                 <p>This documentation generated using <a href="http://github.com/trulia/hologram">Hologram</a>

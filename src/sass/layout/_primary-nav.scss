@@ -1,6 +1,11 @@
 .ss-primary-nav {
   display: none;
 
+  &:target,
+  &.ss-primary-nav--is-active {
+    display: block;
+  }
+
   @include respond-to(768) {
     display: block !important;
   }

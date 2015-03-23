@@ -16,54 +16,35 @@
     <body>
         <header class="ss-page-header">
             <div class="wrapper">
-                <nav>
-                    <ul>
+
+                <h1 class="ss-logo"><a class="ss-logo" href="#" rel="home">Skeletos</a></h1>
+
+                <a class="ss-button ss-primary-nav__show-nav" href="#ss-primary-nav"><span>Show Menu</span></a>
+
+                <nav id="ss-primary-nav" class="ss-primary-nav">
+                    <ul class="ss-primary-nav__list">
                       
-                          <li><a href="base.html">Base</a></li>
+                          <li class="ss-primary-nav__item"><a class="ss-primary-nav__link" href="base_css.html">Base CSS</a></li>
                       
-                          <li><a href="components_css.html">Components CSS</a></li>
+                          <li class="ss-primary-nav__item"><a class="ss-primary-nav__link" href="components_css.html">Components CSS</a></li>
                       
                     </ul>
                 </nav>
             </div>
         </header>
 
-        <main class="content">
-            <div class="wrapper">
-                <ul>
-                    
-                        <li><a href="#alignment">Alignment</a></li>
-                    
-                        <li><a href="#defaults">Defaults</a></li>
-                    
-                </ul>
-<h1 id="alignment" class="styleguide">Alignment</h1>
-<p class="styleguide">Alignment</p><div class="codeExample">
-  <div class="exampleOutput">
-    <div></div>
-
-  </div>
-  <div class="codeBlock">
-    <div class="highlight">
-      <pre><span class="nt">&lt;div&gt;&lt;/div&gt;</span></pre>
-    </div>
-  </div>
-</div>
-
-<h1 id="defaults" class="styleguide">Defaults</h1>
-<p class="styleguide">Defaults</p><div class="codeExample">
-  <div class="exampleOutput">
-    <div></div>
-
-  </div>
-  <div class="codeBlock">
-    <div class="highlight">
-      <pre><span class="nt">&lt;div&gt;&lt;/div&gt;</span></pre>
-    </div>
-  </div>
-</div>
+        <div class="ss-page-content--has-sidebar">
+            <div class="wrapper clearfix">
+                <main class="ss-page-main" role="main">
+<h1>Welcome!</h1>
+                </main>
+                <aside class="ss-page-aside">
+                    <ul>
+                        
+                    </ul>
+                </aside>
             </div>
-        </main>
+        </div>
         <footer class="ss-page-footer">
             <div class="wrapper">
                 <p>This documentation generated using <a href="http://github.com/trulia/hologram">Hologram</a>

@@ -572,16 +572,26 @@ textarea {
     page-break-after: avoid; } }
 /*doc
 ---
+title: Base CSS
+name: 0-base-css
+category: Base CSS
+---
+
+## Base CSS
+
+The goal of base CSS is to lay the foundation for the more complex components to build and extend. The philosophy behind base CSS is that it "just works." The rules that are applied base elements should cover how the primitive HTML elements should work on your site. These rules should be applied to element selectors so they can cascade through the site without the reliance of class names.
+
+Imagine yourself as a user of your code and you want to add a new email signup form to the site. The expectation should be that copy and pasting the new form into your site's code should render that form similar to the other forms on the site. It "just works." Certainly, there may be some differences if you establish a more complex layout for the forms, but overall the new form doesn't seem foriegn or out of place with the rest of the UI.
+
+*/
+/*doc
+---
 title: Defaults
-name: defaults
-category: Base
+name: 1-defaults
+category: Base CSS
 ---
 
 Defaults
-
-```html_example
-<div></div>
-```
 
 */
 html {
@@ -598,6 +608,16 @@ body {
   word-wrap: break-word;
   font-size: 1em; }
 
+/*doc
+---
+title: Typography
+name: 2-typography
+category: Base CSS
+---
+
+Typography
+
+*/
 h1,
 .heading1 {
   margin: 0 0 0.5em;
@@ -724,6 +744,16 @@ blockquote {
 hr {
   margin: 0 0 1.5em; }
 
+/*doc
+---
+title: Links
+name: 3-links
+category: Base CSS
+---
+
+Links
+
+*/
 a {
   text-decoration: none;
   color: #4b78fa; }
@@ -733,6 +763,16 @@ a {
     text-decoration: underline;
     color: #eb262e; }
 
+/*doc
+---
+title: Embeded
+name: 4-embeded
+category: Base CSS
+---
+
+Embeded
+
+*/
 img {
   display: inline-block;
   max-width: 100%;
@@ -745,6 +785,16 @@ figure {
 iframe {
   max-width: 100%; }
 
+/*doc
+---
+title: Forms
+name: 6-forms
+category: Base CSS
+---
+
+Forms
+
+*/
 fieldset {
   margin: 0 0 1.5em; }
 
@@ -793,6 +843,16 @@ textarea {
 textarea {
   height: 8em; }
 
+/*doc
+---
+title: Tables
+name: 5-tables
+category: Base CSS
+---
+
+Tables
+
+*/
 table {
   margin-bottom: 1.5em;
   background: #fff;
@@ -811,15 +871,11 @@ tr:nth-child(even) td {
 /*doc
 ---
 title: Alignment
-name: alignment
-category: Base
+name: 7-alignment
+category: Base CSS
 ---
 
 Alignment
-
-```html_example
-<div></div>
-```
 
 */
 .alignright,
@@ -855,6 +911,16 @@ Alignment
   .alignleft > img,
   .alignleft > a > img {
     margin: 0; } }
+/*doc
+---
+title: Utility
+name: 8-text-button
+category: Base CSS
+---
+
+Utility
+
+*/
 @media (max-width: 767px) {
   .desktop {
     display: none !important; } }
@@ -920,6 +986,8 @@ a.ss-logo {
 
 .ss-primary-nav {
   display: none; }
+  .ss-primary-nav:target, .ss-primary-nav.ss-primary-nav--is-active {
+    display: block; }
   @media (min-width: 48em) {
     .ss-primary-nav {
       display: block !important; } }
@@ -991,21 +1059,22 @@ a.ss-logo {
     width: 80%; } }
 
 @media (min-width: 48em) {
-  .ss-page-sidebar {
+  .ss-page-aside {
     float: right;
     padding-left: 10px;
     width: 33%;
     -moz-box-sizing: border-box;
     box-sizing: border-box; } }
 @media (min-width: 64em) {
-  .ss-page-sidebar {
+  .ss-page-aside {
     width: 25%; } }
 @media (min-width: 80em) {
-  .ss-page-sidebar {
+  .ss-page-aside {
     width: 20%; } }
 
 .ss-page-footer {
   position: relative;
+  clear: both;
   background: #eee;
   padding: 30px 0;
   text-align: center; }
@@ -1033,7 +1102,7 @@ a.ss-logo {
 /*doc
 ---
 title: Grid
-name: grid
+name: 3-grid
 category: Components CSS
 ---
 
@@ -1106,7 +1175,7 @@ Grid
 /*doc
 ---
 title: Buttons
-name: button
+name: 1-button
 category: Components CSS
 ---
 
@@ -1185,7 +1254,7 @@ use either a `<button>` or an `<a>` element:
 /*doc
 ---
 title: Text Buttons
-name: text-button
+name: 2-text-button
 category: Components CSS
 ---
 

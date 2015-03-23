@@ -16,20 +16,21 @@
     <body>
         <header class="ss-page-header">
             <div class="wrapper">
-                <nav>
-                    <ul>
+
+                <h1 class="ss-logo"><a class="ss-logo" href="#" rel="home"><span>Skeletos</span></a></h1>
+
+                <a class="ss-button ss-primary-nav__show-nav" href="#ss-primary-nav"><span>Show Menu</span></a>
+
+                <nav id="ss-primary-nav" class="ss-primary-nav">
+                    <ul class="ss-primary-nav__list">
                       <% @categories.each do |category, file_name| %>
-                          <li><a href="<%= file_name %>"><%= category %></a></li>
+                          <li class="ss-primary-nav__item"><a class="ss-primary-nav__link" href="<%= file_name %>"><%= category %></a></li>
                       <% end %>
                     </ul>
                 </nav>
             </div>
         </header>
 
-        <main class="content">
-            <div class="wrapper">
-                <ul>
-                    <% @blocks.each do |b| %>
-                        <li><a href="#<%= b[:name] %>"><%= b[:title] %></a></li>
-                    <% end %>
-                </ul>
+        <div class="ss-page-content--has-sidebar">
+            <div class="wrapper clearfix">
+                <main class="ss-page-main" role="main">

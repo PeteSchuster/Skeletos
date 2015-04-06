@@ -1,97 +1,52 @@
-@mixin transition($property, $time: 1, $easing: ease-in-out) {
-  $time: $time * 1s;
+//Box Sizing
+//this file contains the mixin
+//for box-sizing
+@import 'mixins/box-sizing';
 
-  -webkit-transition: $property $time $easing;
-  -moz-transition: $property $time $easing;
-  -o-transition: $property $time $easing;
-  -ms-transition: $property $time $easing;
-  transition: $property $time $easing;
-}
 
-@mixin gradient($start-color, $end-color, $start-position: 0%, $end-position: 100%) {
-  background-color: $start-color;
-  background-image: -moz-linear-gradient(top, $start-color $start-position, $end-color $end-position);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop($start-position, $start-color), color-stop($end-position, $end-color));
-  background-image: -webkit-linear-gradient(top, $start-color $start-position, $end-color $end-position);
-  background-image: -o-linear-gradient(top, $start-color $start-position, $end-color $end-position);
-  background-image: -ms-linear-gradient(top, $start-color $start-position, $end-color $end-position);
-  background-image: linear-gradient(top, $start-color $start-position, $end-color $end-position);
-}
+//Font Size
+//this file contains the mixin
+//for font-size
+@import 'mixins/font-size';
 
-@mixin word-break() {
-  -ms-word-wrap: break-all;
-  word-wrap: break-all;
-  word-wrap: break-word;
-}
 
-@mixin box-sizing($prop: border-box) {
-  -moz-box-sizing: $prop;
-  box-sizing: $prop;
-}
+//Gradient
+//this file contains the mixin
+//for Gradients
+@import 'mixins/gradient';
 
-@mixin visually-hidden() {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
 
-// ==========================================================================
-// calc target
-// ==========================================================================
+//Icomoon
+//this file contains the mixin
+//for icomoon
+@import 'mixins/icomoon';
 
-@function calc-target($target, $context: $base-font-size, $unit: 1em) {
-  @return $target / $context * $unit;
-}
 
-// ==========================================================================
-// @mixin respond-to
-// ==========================================================================
+//Letter Spacing
+//this file contains the mixin
+//for letter spacing
+@import 'mixins/letter-spacing';
 
-$media-query-support: true !default;
 
-@mixin respond-to($media: 320, $mq-support: $media-query-support) {
-  @if $mq-support == true {
-    // output content wrapped in media queries
-    @media (min-width: #{$media / 16}em) { @content; }
-  } @elseif $mq-support == false {
-    // just output the content
-    @if $media <= 1024 {
-      @content;
-    }
-  }
-}
+//Respond To
+//this file contains the mixin
+//for respond to
+@import 'mixins/respond-to';
 
-// ==========================================================================
-// @mixin font-size
-// ==========================================================================
-@mixin font-size($target-size, $base: $base-font-size) {
-  font-size: $target-size / $base * 1em;
-}
 
-// ==========================================================================
-// @mixin letter-spacing
-// ==========================================================================
-@mixin letter-spacing($tracking-size) {
-  letter-spacing: $tracking-size / 1000 * 1em;
-}
+//Transition
+//this file contains the mixin
+//for transition
+@import 'mixins/transition';
 
-// ==========================================================================
-// icomoon
-// ==========================================================================
 
-@mixin icomoon() {
-  font-family: 'icomoon';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+//Visually Hidden
+//this file contains the mixin
+//for visually hidden
+@import 'mixins/visually-hidden';
+
+
+//Word Break
+//this file contains the mixin
+//for word break
+@import 'mixins/word-break';

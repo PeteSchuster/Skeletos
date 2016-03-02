@@ -1,0 +1,125 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Components CSS | Skeletos Styleguide</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.8.3.js"></script>
+    </head>
+    <body>
+        <header class="ss-page-header">
+            <div class="wrapper">
+
+                <h1 class="ss-logo"><a class="ss-logo" href="#" rel="home">Skeletos</a></h1>
+
+                <a class="ss-button ss-primary-nav__show-nav" href="#ss-primary-nav"><span>Show Menu</span></a>
+
+                <nav id="ss-primary-nav" class="ss-primary-nav">
+                    <ul class="ss-primary-nav__list">
+                      
+                          <li class="ss-primary-nav__item"><a class="ss-primary-nav__link" href="base_css.html">Base CSS</a></li>
+                      
+                          <li class="ss-primary-nav__item"><a class="ss-primary-nav__link" href="components_css.html">Components CSS</a></li>
+                      
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="ss-page-content--has-sidebar">
+            <div class="wrapper clearfix">
+                <main class="ss-page-main" role="main">
+<h1 id="1-button" class="styleguide">Buttons</h1>
+<p class="styleguide">Button styles can be applied to any element. Typically you&#39;ll want to
+use either a <code class="styleguide">&lt;button&gt;</code> or an <code class="styleguide">&lt;a&gt;</code> element:</p><div class="codeExample">
+  <div class="exampleOutput">
+    <button class="ss-button"><span>Click</span></button>
+<button class="ss-button--primary"><span>Click</span></button>
+<button class="ss-button--secondary"><span>Click</span></button>
+<button class="ss-button--large"><span>Click</span></button>
+<button class="ss-button--small"><span>Click</span></button>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight">
+      <pre><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"ss-button"</span><span class="nt">&gt;&lt;span&gt;</span>Click<span class="nt">&lt;/span&gt;&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"ss-button--primary"</span><span class="nt">&gt;&lt;span&gt;</span>Click<span class="nt">&lt;/span&gt;&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"ss-button--secondary"</span><span class="nt">&gt;&lt;span&gt;</span>Click<span class="nt">&lt;/span&gt;&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"ss-button--large"</span><span class="nt">&gt;&lt;span&gt;</span>Click<span class="nt">&lt;/span&gt;&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"ss-button--small"</span><span class="nt">&gt;&lt;span&gt;</span>Click<span class="nt">&lt;/span&gt;&lt;/button&gt;</span></pre>
+    </div>
+  </div>
+</div>
+
+<h1 id="2-text-button" class="styleguide">Text Buttons</h1>
+<p class="styleguide">Text Button styles can be applied to any element. Typically you&#39;ll want to
+use either a <code class="styleguide">&lt;button&gt;</code> or an <code class="styleguide">&lt;a&gt;</code> element:</p><div class="codeExample">
+  <div class="exampleOutput">
+    <button class="ss-text-button"><span>Click</span></button>
+<button class="ss-text-button--large"><span>Click</span></button>
+<button class="ss-text-button--small"><span>Click</span></button>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight">
+      <pre><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"ss-text-button"</span><span class="nt">&gt;&lt;span&gt;</span>Click<span class="nt">&lt;/span&gt;&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"ss-text-button--large"</span><span class="nt">&gt;&lt;span&gt;</span>Click<span class="nt">&lt;/span&gt;&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"ss-text-button--small"</span><span class="nt">&gt;&lt;span&gt;</span>Click<span class="nt">&lt;/span&gt;&lt;/button&gt;</span></pre>
+    </div>
+  </div>
+</div>
+
+<h1 id="3-grid" class="styleguide">Grid</h1>
+<p class="styleguide">Grid</p><div class="codeExample">
+  <div class="exampleOutput">
+    <div class="ss-grid">
+  <div class="ss-grid__col--1of2">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque accumsan pretium tortor eu laoreet. Phasellus nec rhoncus felis. Proin porttitor velit at mauris auctor, et egestas nibh sagittis. Aenean suscipit volutpat felis, sit amet congue urna. Cras ultrices dictum sapien in eleifend. Suspendisse consectetur suscipit suscipit. Integer euismod magna pulvinar turpis sollicitudin, et elementum ligula tincidunt.</p>
+  </div>
+  <div class="ss-grid__col--1of2">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque accumsan pretium tortor eu laoreet. Phasellus nec rhoncus felis. Proin porttitor velit at mauris auctor, et egestas nibh sagittis. Aenean suscipit volutpat felis, sit amet congue urna. Cras ultrices dictum sapien in eleifend. Suspendisse consectetur suscipit suscipit. Integer euismod magna pulvinar turpis sollicitudin, et elementum ligula tincidunt.</p>
+  </div>
+</div>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight">
+      <pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ss-grid"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ss-grid__col--1of2"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque accumsan pretium tortor eu laoreet. Phasellus nec rhoncus felis. Proin porttitor velit at mauris auctor, et egestas nibh sagittis. Aenean suscipit volutpat felis, sit amet congue urna. Cras ultrices dictum sapien in eleifend. Suspendisse consectetur suscipit suscipit. Integer euismod magna pulvinar turpis sollicitudin, et elementum ligula tincidunt.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ss-grid__col--1of2"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque accumsan pretium tortor eu laoreet. Phasellus nec rhoncus felis. Proin porttitor velit at mauris auctor, et egestas nibh sagittis. Aenean suscipit volutpat felis, sit amet congue urna. Cras ultrices dictum sapien in eleifend. Suspendisse consectetur suscipit suscipit. Integer euismod magna pulvinar turpis sollicitudin, et elementum ligula tincidunt.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></pre>
+    </div>
+  </div>
+</div>
+                </main>
+                <aside class="ss-page-aside">
+                    <ul>
+                        
+                            <li><a href="#1-button">Buttons</a></li>
+                        
+                            <li><a href="#2-text-button">Text Buttons</a></li>
+                        
+                            <li><a href="#3-grid">Grid</a></li>
+                        
+                    </ul>
+                </aside>
+            </div>
+        </div>
+        <footer class="ss-page-footer">
+            <div class="wrapper">
+                <p>This documentation generated using <a href="http://github.com/trulia/hologram">Hologram</a>
+            </div>
+        </footer>
+      </body>
+</html>
